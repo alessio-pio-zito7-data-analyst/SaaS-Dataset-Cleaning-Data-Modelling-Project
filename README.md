@@ -1,22 +1,42 @@
 # SaaS Dataset Cleaning & Data Modelling Project
 
-## Overview
+## Project Context
 
-This project started as a SQL + Power BI analysis using a synthetic SaaS dataset from Kaggle.
+This project originally started as a SQL + Power BI SaaS business analysis using a synthetic dataset downloaded from Kaggle.
 
-During the data ingestion process, I discovered multiple inconsistencies in the original dataset structure, including:
+However, during the initial data ingestion and modelling phase, I discovered multiple structural inconsistencies in the original dataset that would have negatively impacted the reliability of any downstream BI analysis.
+
+Instead of proceeding directly with dashboards and KPI analysis, I decided to split the work into two separate projects:
+
+1. **This project** → focused entirely on dataset cleaning, restructuring, validation, and relational modelling.
+2. **Future BI Analysis project** → focused on business insights, KPI analysis, and dashboard development using the cleaned dataset.
+
+This repository represents the full data remediation and modelling phase required before building a reliable BI solution.
+
+---
+
+## Issues Identified in the Original Dataset
+
+During the ingestion and exploration process, I identified several inconsistencies, including:
+
 - misleading boolean flags
 - duplicated identifiers
 - mixed business logic
 - formatting and NULL issues
 - inconsistent relational modelling
+- subscription logic stored in non-normalized structures
 
-Instead of using the dataset as-is, I redesigned and cleaned the database to create a more reliable and analysis-ready relational model.
+These issues would have compromised:
+- metric consistency
+- relational integrity
+- KPI reliability
+- downstream analytical accuracy
 
 ---
 
-##  Modelling Example Screenshot 
-Subscriptions table restructuring process: 
+## Modelling Example Screenshot
+
+Subscriptions table restructuring process:  
 from an inconsistent raw table to a cleaner and more analysis-ready relational model.
 
 ![Comparison](Data_Modelling/Before_%26_After_Tables_Screenshots/subscriptions_before_and_after.png)
@@ -28,6 +48,7 @@ from an inconsistent raw table to a cleaner and more analysis-ready relational m
 - Cleaned and restructured the original dataset using Excel
 - Redesigned parts of the relational model
 - Split inconsistent subscription logic into separate tables
+- Improved relational consistency and analytical usability
 - Performed data ingestion into MySQL using SQL scripts
 - Added:
   - Primary Keys
@@ -35,14 +56,15 @@ from an inconsistent raw table to a cleaner and more analysis-ready relational m
   - Constraints
   - Validation checks
 - Debugged formatting and hidden NULL-related issues
-- Created a complete data validation workflow
+- Built a complete SQL-based data validation workflow
 - Documented the cleaned dataset structure and business logic
-- Built a relational data model in Power BI for future BI analysis
+- Created a relational data model in Power BI to prepare for future BI analysis
 
 ---
 
-##  Data Model Schema
-Final relational data model created after the cleaning and modelling process
+## Data Model Schema
+
+Final relational data model created after the cleaning and restructuring process.
 
 ![Data Model Schema](Data_Modelling/Data_Model_Overview.png)
 
@@ -50,7 +72,7 @@ Final relational data model created after the cleaning and modelling process
 
 ## Project Structure
 
-Click on the following folders to dive deeper into the core components of the project:
+Click on the following folders to explore the core components of the project:
 
 - [Data_Modelling](./Data_Modelling)  
   Excel modelling process, formulas, and raw vs cleaned table comparisons.
@@ -59,10 +81,12 @@ Click on the following folders to dive deeper into the core components of the pr
   SQL ingestion scripts and related screenshots.
 
 - [Debugging_&_Data_Validation](./Debugging_%26_Data_Validation)  
-  Debugging and data validation SQL scripts.
+  SQL debugging and data validation workflow.
 
 - [Raw_&_Processed_SaaS_Dataset](./Raw_%26_Processed_SaaS_Dataset)  
   Raw and cleaned datasets with related documentation.
+
+---
 
 ## Tools Used
 
@@ -74,8 +98,17 @@ Click on the following folders to dive deeper into the core components of the pr
 
 ## Goal of the Project
 
-The goal was not to completely reinvent the dataset, but to:
-- preserve its original business logic
-- fix structural inconsistencies
-- improve analytical reliability
+The objective of this project was not to completely reinvent the original dataset, but to:
 
+- preserve the original business logic
+- improve structural consistency
+- normalize problematic entities
+- strengthen relational integrity
+- improve analytical reliability
+- prepare the dataset for a future BI analysis project
+
+---
+
+## Related Project
+
+The BI analysis project built on top of this cleaned dataset will be added here once completed.
