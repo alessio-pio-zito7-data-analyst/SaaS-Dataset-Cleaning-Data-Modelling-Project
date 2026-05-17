@@ -16,7 +16,7 @@ Instead of using the dataset as-is, I redesigned and cleaned the database to cre
 ---
 
 ##  Modelling Example Screenshot 
-subscription table restructuring process: 
+Subscriptions table restructuring process: 
 from an inconsistent raw table to a cleaner and more analysis-ready relational model.
 
 ![Comparison](Data_Modelling/Before_%26_After_Tables_Screenshots/subscriptions_before_and_after.png)
@@ -78,5 +78,4 @@ The goal was not to completely reinvent the dataset, but to:
 - preserve its original business logic
 - fix structural inconsistencies
 - improve analytical reliability
-- create a BI-ready relational dataset
 
