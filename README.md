@@ -15,6 +15,14 @@ Instead of using the dataset as-is, I redesigned and cleaned the database to cre
 
 ---
 
+##  Modelling Example Screenshot 
+subscription table restructuring process: 
+from an inconsistent raw table to a cleaner and more analysis-ready relational model.
+
+![Comparison](Data_Modelling/Before_%26_After_Tables_Screenshots/subscriptions_before_and_after.png)
+
+---
+
 ## What I Did
 
 - Cleaned and restructured the original dataset using Excel
@@ -30,6 +38,13 @@ Instead of using the dataset as-is, I redesigned and cleaned the database to cre
 - Created a complete data validation workflow
 - Documented the cleaned dataset structure and business logic
 - Built a relational data model in Power BI for future BI analysis
+
+---
+
+##  Data Model Schema
+Final relational data model created after the cleaning and modelling process
+
+![Data Model Schema](Data_Modelling/Data_Model_Overview.png)
 
 ---
 
