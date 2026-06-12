@@ -9,7 +9,7 @@ However, during the initial data ingestion and modelling phase, I discovered mul
 Instead of proceeding directly with dashboards and KPI analysis, I decided to split the work into two separate projects:
 
 1. **This project** → focused entirely on dataset cleaning, restructuring, validation, and relational modelling.
-2. **Future BI Analysis project** → focused on business insights, KPI analysis, and dashboard development using the cleaned dataset.
+2. **Future BI Analysis project** → 👉 [SaaS Product Usage & Retention Analysis](https://github.com/alessio-pio-zito7-data-analyst/saas-product-usage-retention-analysis/tree/main)
 
 This repository represents the full data remediation and modelling phase required before building a reliable BI solution.
 
@@ -111,4 +111,11 @@ The objective of this project was not to completely reinvent the original datase
 
 ## Related Project
 
-The BI analysis project built on top of this cleaned dataset will be added here once completed.
+**SaaS Product Usage & Retention Analysis**
+- Designed KPI framework from business requirements
+- Built a Star Schema analytical model in MySQL
+- Developed SQL-based KPI calculations and reporting views
+- Developed a Power BI dashboard to support product decision-making
+  
+👉 [View Project](https://github.com/alessio-pio-zito7-data-analyst/saas-product-usage-retention-analysis/tree/main)
+
